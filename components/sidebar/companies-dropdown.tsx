@@ -19,8 +19,8 @@ interface Company {
 
 export const CompaniesDropdown = () => {
   const [company, setCompany] = useState<Company>({
-    name: "Acme Co.",
-    location: "Palo Alto, CA",
+    name: "Admin",
+    location: "Akshar Game Zone",
     logo: <AcmeIcon />,
   });
   return (
@@ -47,48 +47,48 @@ export const CompaniesDropdown = () => {
         onAction={(e) => {
           if (e === "1") {
             setCompany({
-              name: "Facebook",
-              location: "San Fransico, CA",
+              name: "Admin",
+              location: "Akshar Game Zone",
               logo: <AcmeIcon />,
             });
           }
-          if (e === "2") {
-            setCompany({
-              name: "Instagram",
-              location: "Austin, Tx",
-              logo: <AcmeLogo />,
-            });
-          }
-          if (e === "3") {
-            setCompany({
-              name: "Twitter",
-              location: "Brooklyn, NY",
-              logo: <AcmeIcon />,
-            });
-          }
-          if (e === "4") {
-            setCompany({
-              name: "Acme Co.",
-              location: "Palo Alto, CA",
-              logo: <AcmeIcon />,
-            });
-          }
+          // if (e === "2") {
+          //   setCompany({
+          //     name: "Instagram",
+          //     location: "Austin, Tx",
+          //     logo: <AcmeLogo />,
+          //   });
+          // }
+          // if (e === "3") {
+          //   setCompany({
+          //     name: "Twitter",
+          //     location: "Brooklyn, NY",
+          //     logo: <AcmeIcon />,
+          //   });
+          // }
+          // if (e === "4") {
+          //   setCompany({
+          //     name: "Acme Co.",
+          //     location: "Palo Alto, CA",
+          //     logo: <AcmeIcon />,
+          //   });
+          // }
         }}
         aria-label="Avatar Actions"
       >
-        <DropdownSection title="Companies">
+        <DropdownSection title="Profiles">
           <DropdownItem
             key="1"
             startContent={<AcmeIcon />}
-            description="San Fransico, CA"
+            description="Akshar Game Zone"
             classNames={{
               base: "py-4",
               title: "text-base font-semibold",
             }}
           >
-            Facebook
+            Admin
           </DropdownItem>
-          <DropdownItem
+          {/* <DropdownItem
             key="2"
             startContent={<AcmeLogo />}
             description="Austin, Tx"
@@ -113,14 +113,14 @@ export const CompaniesDropdown = () => {
           <DropdownItem
             key="4"
             startContent={<AcmeIcon />}
-            description="Palo Alto, CA"
+            description="Admin"
             classNames={{
               base: "py-4",
               title: "text-base font-semibold",
             }}
           >
-            Acme Co.
-          </DropdownItem>
+            Akshar Game Zone
+          </DropdownItem> */}
         </DropdownSection>
       </DropdownMenu>
     </Dropdown>

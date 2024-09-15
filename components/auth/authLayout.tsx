@@ -33,12 +33,15 @@ export const AuthLayoutWrapper = ({ children }: Props) => {
         </div>
 
         <div className='z-10'>
-          <h1 className='font-bold text-[45px]'>NextUI Dashboard Template</h1>
+          <h1 className='font-bold text-[45px]'>Akshar Game Zone</h1>
           <div className='font-light text-slate-400 mt-4'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-            possimus voluptate, sapiente assumenda deserunt repellendus,
-            perferendis odit voluptas hic dolores laborum fugit ut? Architecto
-            quo ex quidem vitae quae rem.
+            Admin Management System
+            </div><div className='font-light text-slate-400 mt-4'>
+            For Any Queries Contact :
+            <br/>
+            Developer : Dhawan Solanki 
+            <br/>
+            Email : workspace.dhawan@gmail.com
           </div>
         </div>
       </div>
